@@ -8,3 +8,9 @@ def count_vowels(s: str) -> int:
         raise TypeError("Input must be a string")
     vowels = "aeiouAEIOU"
     return sum(1 for char in s if char in vowels)
+
+def is_palindrome(s: str) -> bool:
+    if not isinstance(s, str):
+        raise TypeError("Input must be a string")
+    cleaned = "".join(c.lower() for c in s if c.isalnum())
+    return cleaned == cleaned[::-1]
