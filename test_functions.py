@@ -25,3 +25,9 @@ def test_to_upper():
     assert fn.to_upper("Python") == "PYTHON"
     with pytest.raises(TypeError):
         fn.to_upper(3.14)
+        
+def test_concat():
+    assert fn.concat("hola", "mundo") == "holamundo"
+    assert fn.concat("", "test") == "test"
+    with pytest.raises(TypeError):
+        fn.concat("hola", 5)

@@ -1,4 +1,4 @@
-from functions import reverse, count_vowels, is_palindrome, to_upper
+from functions import reverse, count_vowels, is_palindrome, to_upper, concat
 
 def main():
     texto = "Hola Mundo"
@@ -18,6 +18,10 @@ def main():
     
     # to_upper
     print("Texto en mayúsculas:", to_upper(texto))
+    
+    # concat
+    a, b = "Hola", "Mundo"
+    print("Concatenación:", concat(a, b))
 
 if __name__ == "__main__":
     main()
