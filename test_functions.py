@@ -19,3 +19,9 @@ def test_is_palindrome():
     assert fn.is_palindrome("A man, a plan, a canal, Panama") is True
     with pytest.raises(TypeError):
         fn.is_palindrome(10)
+        
+def test_to_upper():
+    assert fn.to_upper("hola") == "HOLA"
+    assert fn.to_upper("Python") == "PYTHON"
+    with pytest.raises(TypeError):
+        fn.to_upper(3.14)

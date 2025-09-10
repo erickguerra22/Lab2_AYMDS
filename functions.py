@@ -14,3 +14,8 @@ def is_palindrome(s: str) -> bool:
         raise TypeError("Input must be a string")
     cleaned = "".join(c.lower() for c in s if c.isalnum())
     return cleaned == cleaned[::-1]
+
+def to_upper(s: str) -> str:
+    if not isinstance(s, str):
+        raise TypeError("Input must be a string")
+    return s.upper()
