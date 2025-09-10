@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  test:
     name: Test with pytest
     runs-on: ubuntu-latest
     steps:
