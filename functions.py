@@ -1,7 +1,8 @@
 def reverse(s: str) -> str:
     if not isinstance(s, str):
         raise TypeError("Se espera una cadena de texto")
-    return s[::-1]
+    # return s[::-1]
+    return s
 
 def count_vowels(s: str) -> int:
     if not isinstance(s, str):
