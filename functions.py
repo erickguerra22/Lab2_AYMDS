@@ -23,4 +23,4 @@ def to_upper(s: str) -> str:
 def concat(a: str, b: str) -> str:
     if not isinstance(a, str) or not isinstance(b, str):
         raise TypeError("Both inputs must be strings")
-    return a
+    return a + b
